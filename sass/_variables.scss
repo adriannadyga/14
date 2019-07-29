@@ -1,7 +1,7 @@
 //colors
 $green: #16A085;
-$black: #0000;
 $white: #ffff;
+$grey: #f5f6f7e1;
 
 body {
     font-family: 'Gotham Rounded';
@@ -34,19 +34,21 @@ h4 {
 h5 {
     font-size: 20px;
     text-transform: uppercase;
-    color: $black;
 }
 
 //title green
 h6 {
     font-size: 18px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     color: $green;
 }
 
 p {
     font-size: 12px;
-    color: $black;
+    letter-spacing: 2px;
+    line-height: 24px;
+    text-align: left;
 }
 
 button {
@@ -55,6 +57,7 @@ button {
     background-color: $green;
     color: $white;
     text-transform: uppercase;
+    cursor: pointer;
 
 }
 
@@ -63,6 +66,7 @@ button {
     width: 170px;
     height: 52px;
     font-size: 12px;
+    margin-top: 24px;
 }
 .btnLarge {
     @extend button;
@@ -79,3 +83,22 @@ button {
 i {
     color: $white;
 }
+
+.flickity-prev-next-button {
+    top: 80px;
+    -webkit-transform: none;
+    transform: none;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .flickity-prev-next-button.previous {
+    top: 350px;
+    left: 20px;
+  }
+  
+  .flickity-prev-next-button.next {
+    top: 350px;
+    left: 60px;
+  }
+  

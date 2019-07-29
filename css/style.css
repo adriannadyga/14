@@ -25,18 +25,20 @@ h4 {
 h5 {
   font-size: 20px;
   text-transform: uppercase;
-  color: #0000;
 }
 
 h6 {
   font-size: 18px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   color: #16A085;
 }
 
 p {
   font-size: 12px;
-  color: #0000;
+  letter-spacing: 2px;
+  line-height: 24px;
+  text-align: left;
 }
 
 button, .btnSmall, .btnLarge {
@@ -45,12 +47,14 @@ button, .btnSmall, .btnLarge {
   background-color: #16A085;
   color: #ffff;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btnSmall {
   width: 170px;
   height: 52px;
   font-size: 12px;
+  margin-top: 24px;
 }
 
 .btnLarge {
@@ -67,6 +71,24 @@ button, .btnSmall, .btnLarge {
 
 i {
   color: #ffff;
+}
+
+.flickity-prev-next-button {
+  top: 80px;
+  -webkit-transform: none;
+  transform: none;
+  width: 30px;
+  height: 30px;
+}
+
+.flickity-prev-next-button.previous {
+  top: 350px;
+  left: 20px;
+}
+
+.flickity-prev-next-button.next {
+  top: 350px;
+  left: 60px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -219,7 +241,6 @@ img {
    * 1. Change the font styles in all browsers.
    * 2. Remove the margin in Firefox and Safari.
    */
-button, .btnSmall, .btnLarge,
 input,
 optgroup,
 select,
@@ -521,24 +542,27 @@ body section .container {
   }
 }
 
-body .hero {
+.hero {
   background-image: url(https://github.com/adriannadyga/14/blob/master/images/hero_Easy-Resize.com.jpg?raw=true);
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  position: relative;
 }
 
-body .hero .container ul {
+.hero .container ul {
   list-style-type: none;
-  display: flex;
-  justify-content: space-between;
   margin-top: 80px;
+  margin-left: 120px;
 }
 
-body .hero .container ul li a {
+.hero .container ul li {
+  float: left;
+  width: 20%;
+}
+
+.hero .container ul li a {
   color: white;
   text-align: center;
   text-transform: uppercase;
@@ -546,25 +570,80 @@ body .hero .container ul li a {
   font-size: 16px;
 }
 
-body .hero .container .hero-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.hero .container .hero-text {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%);
+  text-align: center;
 }
 
-body .hero .container .heroIcons {
-  display: flex;
-  justify-content: space-between;
-  width: 120px;
-  font-size: 30px;
+.hero .container .heroIcons {
   position: absolute;
+  bottom: -48%;
   left: 50%;
-  top: 100%;
+  transform: translate(-50%);
+  font-size: 30px;
+}
+
+.hero .container .heroIcons i {
+  padding: 0 5px;
+}
+
+.getStarted {
+  display: flex;
+  background: #f5f6f7e1;
+}
+
+.getStarted .container {
+  padding-top: 100px;
+}
+
+.design {
+  margin-top: 150px;
+}
+
+.design .container {
+  border: 1px solid black;
+}
+
+.design .container .col-4 {
+  position: relative;
+}
+
+.design .container .col-4 .main-carousel .carousel-cell {
+  width: 100%;
+  height: 50vh;
+  min-height: 250px;
+  margin-right: 10px;
+  background-size: cover;
+}
+
+.design .container .col-4 .main-carousel .carousel-cell .container {
+  width: 1200px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+}
+
+.design .container .col-4 .btnUp {
+  position: absolute;
+  top: 250px;
+}
+
+.design .container .col-4 .carousel-status {
+  position: absolute;
+  top: 320px;
+  right: 320px;
+}
+
+.community {
+  display: flex;
+  background: #f5f6f7e1;
+}
+
+.community .container {
+  padding-top: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
