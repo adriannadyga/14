@@ -591,16 +591,12 @@ body section .container {
 }
 
 .getStarted {
-  display: flex;
   background: #f5f6f7e1;
 }
 
-.getStarted .container {
+.getStarted .col-4,
+.getStarted .col-8 {
   padding-top: 100px;
-}
-
-.design {
-  margin-top: 150px;
 }
 
 .design .container {
@@ -638,7 +634,6 @@ body section .container {
 }
 
 .community {
-  display: flex;
   background: #f5f6f7e1;
 }
 
