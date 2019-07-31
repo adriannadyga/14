@@ -5,39 +5,41 @@
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    .container {
+    nav {
+        position: relative;
+        padding-top: 80px;
         ul {
+            margin: 0;
+            padding: 0;
             list-style-type: none;
-            margin-top: 80px;
-            margin-left: 120px;
+            text-align: center;
             li {
-                float: left;
-                width: 20%;
+                display: inline-block;
+                padding: 0 70px;
                 a {
-                    color: white;
-                    text-align: center;
-                    text-transform: uppercase;
                     text-decoration: none;
-                    font-size: 16px;
+                    text-transform: uppercase;
+                    color: $white;
                 }
             }
-        } 
-        .hero-text {
-            position: absolute;
-            top: 70%;
-            left: 50%;
-            transform: translate(-50%);
-            text-align: center;
-        }  
-        .heroIcons {
-            position: absolute;
-            bottom: -48%;
-            left: 50%;
-            transform: translate(-50%);
-            font-size: 30px;
-            i {
-                padding: 0 5px;
-            }
-        } 
+        }
+    }
+    .hero-text {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+        text-align: center;
+    }
+    .hero-icons {
+        position: absolute;
+        top: 143%;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 30px;
+        i {
+            padding: 0 5px;
+        }
     }
 }

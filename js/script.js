@@ -1,4 +1,4 @@
-'use strict'
+/*'use strict'
 //flickity
 var carousel = document.querySelector('.main-carousel');
 var carouselStatus = document.querySelector('.carousel-status');
