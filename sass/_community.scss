@@ -2,5 +2,20 @@
     background: $grey;
     .container {
         padding-top: 100px;
+        text-align: center;
+        .col-2 {
+            h3 {
+                color: $black;
+                text-transform: uppercase;
+            }
+            p {
+                font-size: 10px;
+            }
+        }
+        .col-9 {
+            img {
+                padding-right: 30px; 
+            }
+        }
     }
 }
