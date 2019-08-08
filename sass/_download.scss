@@ -1,0 +1,25 @@
+.download {
+    background-color: $grey;
+    .container {
+        position: relative;
+        padding: 100px 0 50px 0;
+        text-align: center;
+        h3 {
+            color: $black;
+        }
+        .col-5 {
+            .btnIcon {
+                position: absolute;
+                i {
+                    font-size: 30px;
+                }
+            }
+        }
+        .right {
+            text-align: right;
+        }
+        .left {
+            text-align: left;
+        }
+    }
+}

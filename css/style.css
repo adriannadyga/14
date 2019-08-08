@@ -17,6 +17,7 @@ h3 {
 
 h4 {
   font-size: 24px;
+  letter-spacing: 5px;
   text-transform: uppercase;
   color: #ffff;
 }
@@ -44,6 +45,7 @@ button, .btnSmall, .btnLarge {
   border: none;
   background-color: #16A085;
   color: #ffff;
+  font-family: 'Gotham Rounded';
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -59,12 +61,13 @@ button, .btnSmall, .btnLarge {
   width: 242px;
   height: 59px;
   font-size: 16px;
+  background: #16a0849a;
 }
 
 .btnIcon {
   width: 58px;
   height: 59px;
-  background: #16a0849a;
+  color: #16A085;
 }
 
 i {
@@ -669,13 +672,91 @@ body section .container {
   position: relative;
 }
 
-.hero2 .container .hero2-text {
+.hero2 .container {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%);
-  width: 100%;
   text-align: center;
+}
+
+.hero2 .container .hero2-text {
+  width: 100%;
+}
+
+.hero2 .container .input-container input {
+  width: 283px;
+  height: 63px;
+}
+
+.hero2 .container .input-container input::placeholder {
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.hero2 .container .input-container button, .hero2 .container .input-container .btnSmall, .hero2 .container .input-container .btnLarge {
+  position: absolute;
+  width: 63px;
+  height: 63px;
+  background-color: #16A085;
+}
+
+.hero2 .container .input-container button i, .hero2 .container .input-container .btnSmall i, .hero2 .container .input-container .btnLarge i {
+  font-size: 20px;
+}
+
+.download {
+  background-color: #f5f6f7e1;
+}
+
+.download .container {
+  position: relative;
+  padding: 100px 0 50px 0;
+  text-align: center;
+}
+
+.download .container h3 {
+  color: #000000;
+}
+
+.download .container .col-5 .btnIcon {
+  position: absolute;
+}
+
+.download .container .col-5 .btnIcon i {
+  font-size: 30px;
+}
+
+.download .container .right {
+  text-align: right;
+}
+
+.download .container .left {
+  text-align: left;
+}
+
+.footer .container {
+  padding-top: 50px;
+}
+
+.footer .container .right {
+  text-align: right;
+}
+
+.footer .container .col-6 ul {
+  list-style-type: none;
+}
+
+.footer .container .col-6 ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.footer .container .col-6 ul li:not(:nth-child(3)) {
+  border-right: 2px solid #16A085;
+  padding-right: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
