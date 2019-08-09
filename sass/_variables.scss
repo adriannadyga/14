@@ -92,15 +92,20 @@ i {
     transform: none;
     width: 30px;
     height: 30px;
-  }
+}
   
-  .flickity-prev-next-button.previous {
+.flickity-prev-next-button.previous {
     top: 350px;
     left: 20px;
-  }
+}
   
-  .flickity-prev-next-button.next {
+.flickity-prev-next-button.next {
     top: 350px;
     left: 60px;
-  }
-  
+}
+
+@media (max-width: 768px) {
+    p {
+        text-align: center;
+    }
+}

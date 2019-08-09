@@ -23,3 +23,13 @@
         }
     }
 }
+
+@media (max-width: 320px) {
+    .download {
+        .container {
+            .right {
+                text-align: left;
+            }
+        }
+    }
+}

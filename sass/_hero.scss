@@ -43,3 +43,16 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .hero {
+        nav {
+            ul {
+                li {
+                    display: block;
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+}

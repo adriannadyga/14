@@ -92,6 +92,12 @@ i {
   left: 60px;
 }
 
+@media (max-width: 768px) {
+  p {
+    text-align: center;
+  }
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -508,7 +514,7 @@ body section .container {
   margin: 0 auto;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* For tablets: */
   .col-s-1 {
     width: 8.33%;
@@ -544,6 +550,46 @@ body section .container {
     width: 91.66%;
   }
   .col-s-12 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .col-xs-1 {
+    width: 8.33%;
+  }
+  .col-xs-2 {
+    width: 16.66%;
+  }
+  .col-xs-3 {
+    width: 25%;
+  }
+  .col-xs-4 {
+    width: 33.33%;
+  }
+  .col-xs-5 {
+    width: 41.66%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-7 {
+    width: 58.33%;
+  }
+  .col-xs-8 {
+    width: 66.66%;
+  }
+  .col-xs-9 {
+    width: 75%;
+  }
+  .col-xs-10 {
+    width: 83.33%;
+  }
+  .col-xs-11 {
+    width: 91.66%;
+  }
+  .col-xs-12 {
     width: 100%;
   }
 }
@@ -601,9 +647,22 @@ body section .container {
   padding: 0 5px;
 }
 
+@media (max-width: 768px) {
+  .hero nav ul li {
+    display: block;
+    padding: 10px 0;
+  }
+}
+
 .get-started {
   padding-top: 120px;
   background-color: #f5f6f7;
+}
+
+@media (max-width: 768px) {
+  .get-started .container .col-8 {
+    display: none;
+  }
 }
 
 .design .container {
@@ -614,30 +673,19 @@ body section .container {
   position: relative;
 }
 
-.design .container .col-4 .main-carousel .carousel-cell {
-  width: 100%;
-  height: 50vh;
-  min-height: 250px;
-  margin-right: 10px;
-  background-size: cover;
-}
-
-.design .container .col-4 .main-carousel .carousel-cell .container {
-  width: 1200px;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-}
-
 .design .container .col-4 .btnUp {
   position: absolute;
   top: 250px;
 }
 
-.design .container .col-4 .carousel-status {
-  position: absolute;
-  top: 320px;
-  right: 320px;
+@media (max-width: 768px) {
+  .design .container .col-6,
+  .design .container .col-2 {
+    display: none;
+  }
+  .design .container .col-s-12 .btnUp {
+    position: static;
+  }
 }
 
 .community {
@@ -645,7 +693,7 @@ body section .container {
 }
 
 .community .container {
-  padding-top: 100px;
+  padding: 100px 0 100px 0;
   text-align: center;
 }
 
@@ -734,6 +782,12 @@ body section .container {
 
 .download .container .left {
   text-align: left;
+}
+
+@media (max-width: 320px) {
+  .download .container .right {
+    text-align: left;
+  }
 }
 
 .footer .container {
