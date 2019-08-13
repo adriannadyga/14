@@ -37,3 +37,15 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .hero2 {
+        .container {
+            .input-container {
+                input {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

@@ -13,13 +13,51 @@
             }
         }
         .col-9 {
-            img {
-                padding-right: 30px; 
+            position: relative;
+            .main-carousel {
+                .carousel-cell {
+                    width: 100%;
+                    height: 100%;
+                    min-height: 500px;
+                    margin-right: 10px;
+                    background-size: cover;
+                    img {
+                        padding-right: 30px; 
+                    }       
+                }
+                .flickity-prev-next-button.previous {
+                    top: -30px;
+                    left: 750px;
+                    background: $grey;
+                }
+                .flickity-prev-next-button.next {
+                    top: -30px;
+                    right: 80px;
+                    background: $grey;
+                }
+            }
+            .carousel-status {
+                position: absolute;
+                top: 320px;
+                right: 320px;
             }
         }
     }
 }
 
 @media (max-width: 768px) {
-    
+    .community {
+        .container {
+            .col-9 {
+                .main-carousel {
+                    .flickity-prev-next-button.previous {
+                        display: none;
+                    }
+                    .flickity-prev-next-button.next {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
